@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Heebo:wght@300;400&family=Inclusive+Sans:ital@1&family=Montserrat:ital,wght@0,200;0,400;1,400&family=Open+Sans&family=Roboto&display=swap');
+html, body
+{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.075);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    margin-right: auto;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: -20px;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: rgb(85, 176, 236);
+}
+
+.burger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.side-menu {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.side-menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: rgb(85, 176, 236);
+}
+
+.side-menu.open {
+    width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+.logo-icon{
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 0px rgb(0, 174, 255);
+}
+
+.homepage-container{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#header {
+    animation: pulse 1s ease;
+}
+
+
+.h-left-container, .h-right-container{
+    margin: 5px;
+    margin-bottom: 100px;
+}
+#contact-btn{
+    padding: 10px 30px;
+    border: 0;
+    background-color: rgb(0, 174, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    color: white;
+}
+#contact-btn:hover{
+    background-color: rgb(50, 50, 85);
+    padding: 10px 40px;
+}
+.homepage-container, .services{
+    padding: 25px;
+}
+.services{}
+.s-cards, .why-us, .seperator-0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.s-card{
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.075);
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+.s-card:hover{
+    transform: scale(1.10);
+}
+.sphere{
+    background-color: rgb(0, 174, 255);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.about{
+    background-color: rgba(0, 0, 0, 0.075);
+    padding: 25px;
+}
+.a-containers{
+    text-align: center;
+    padding: 20px;
+}
+.text-png{
+    background-color: rgb(0, 174, 255);
+    border: 0;
+    height: 13px;
+    width: 13px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-right: 5px;
+    color: white;
+    font-weight: bold;
+}
+.a-containers-1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 174, 255);
+    border-radius: 10px;
+    justify-content:space-around;
+    padding: 20px;
+    transition-duration: 1s;
+}
+.a-containers-1:hover{
+    background-color:rgb(138, 138, 138);
+}
+.value{
+    margin: 10px;
+    text-align: center;
+    color: white;
+    transition-duration: 1s;
+}
+.value:hover{
+    transform: scale(1.10);
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+.contact-us-container{
+    padding: 25px;
+}
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 20px;
+}
+input, #submit{
+    padding: 10px 50px;
+    margin: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+    outline-color: rgb(0, 174, 255);
+}
+input:hover, textarea:hover{
+    border-color: rgb(0, 174, 255);
+}
+textarea{
+    width: 184px;
+    height: 20px;
+    padding: 10px 45px;
+    margin: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+    outline-color: rgb(0, 174, 255);
+}
+#submit{
+    color: rgb(0, 174, 255);
+    transition-duration: 1s;
+}
+#submit:hover{
+    background-color: rgb(0, 174, 255);
+    color: white;
+    padding: 10px 85px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.connect-text{
+    margin-top: -18px;
+}
+
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 20px;
+}
+.left-questions, .right-questions{
+    margin: 10px;
+}
+.faq-page{
+    padding: 25px;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: medium;
+    color: #585858;
+    margin: 15px;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.answer.show {
+    display: block;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #585858;
+}
+.footer-content h3{
+    color: white;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    margin: 10px;
+}
+.nav-links a:hover{
+    color: white;
+}
+.footer-content p{
+    color: rgb(197, 197, 197);
+}
+.media-icons{
+    margin-top: 15px;
+}
+.media-icons a{
+    margin: 6px;
+}
